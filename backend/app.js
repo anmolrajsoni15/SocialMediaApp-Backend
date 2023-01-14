@@ -4,7 +4,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
 app.use(cors({
-    origin: "https://mera-social-media.onrender.com/",
+    origin: "*",
     credentials: true
 }));
 
