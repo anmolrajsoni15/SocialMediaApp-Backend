@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
+
+app.use(cors({
+    origin: "https://mera-social-media.onrender.com/",
+    credentials: true
+}));
+
 
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config({ path: "backend/config/config.env" });
