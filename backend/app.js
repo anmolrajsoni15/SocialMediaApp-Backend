@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
+// const cors = require("cors");
 
-app.use(cors({
-    origin: "*",
-    credentials: true
-}));
+// app.use(cors({
+//     origin: "*",
+//     credentials: true
+// }));
 
 
 if (process.env.NODE_ENV !== "production") {
